@@ -4,3 +4,5 @@ PicUp Docs:
 2. _Run npm install to install necessary project packages_
 3. _Run node index.js_
 4. *Navigate to localhost:5000 to view and interact with project*
+
+This project was made with Express framework, EJS templating framework, Vanilla and Tailwind CSS, and NodeJs.
