@@ -1,0 +1,136 @@
+  /* MANUAL GENERATION OF STYLES!!! */
+
+/* Container */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body, div{
+    background-color: #05132b;
+    color:rgb(218, 159, 188);
+}
+h1{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: .3rem;
+}
+p{
+    font-family:'Courier New', Courier, monospace;  
+    font-size: .69rem;
+}
+.p-4, div.p-4 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.7rem;
+  justify-content: center;
+  align-items: center;
+}   
+div.p-4 {
+  margin: 9vh auto ;
+}
+
+form {
+  width: 100%;
+  max-width: 32rem; /* max-w-lg */
+  border: 2px solid #64748b; /* border-slate-500 */
+  border-radius: 0.375rem; /* rounded-md */
+  padding: 1rem; /* p-4 */
+}
+
+/* Flexbox Layout */
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 700; /* font-bold */
+  text-transform: uppercase; /* uppercase */
+  letter-spacing: 0.05em; /* tracking-wide */
+  color: #8197bb; /* text-gray-700 */
+  margin-bottom: 0.5rem;
+}
+
+/* Input File Styling */
+input[type="file"] {
+  display: inline-block;
+  width: 100%;
+  background-color: #e5e7eb; /* bg-gray-200 */
+  color: #374151; /* text-gray-700 */
+  border: 1px solid #efeff0; /* neutral border */
+  border-radius: .25rem; /* rounded */
+  padding: 0.75rem 1rem; /* py-3 px-4 */
+  margin-bottom: 0.75rem; /* mb-3 */
+  line-height: 1.5;
+  appearance: none;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  background-color: #ffffff; /* focus:bg-white */
+}
+
+/* Button Container */
+.w-full {
+  width: 100%;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #7c3aed; /* bg-violet-500 */
+  color: #ffffff; /* text-white */
+  font-size: 1.1rem; /* text-xl */
+  width: 100%; /* w-1/2 */
+  padding: 0.5rem 0; /* py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(73, 88, 138, 0.2); /* shadow-xl */
+  transition: all 0.3s ease; /* duration-300 */
+  border: none;
+  font-family:'Courier New', Courier, monospace;  
+}
+
+input[type="submit"]:hover {
+  box-shadow: none; /* hover:shadow-none */
+}
+
+input[type="submit"]:active {
+  background-color: #6d28d9; /* active:bg-violet-600 */
+}

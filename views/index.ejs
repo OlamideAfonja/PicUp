@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Upload MMF</title> 
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/vanilla.css">
+    <!-- <link rel="stylesheet"  href="../public/stylesheets/output.css"> -->
+    <style>
+   
+
+
+    </style>
+</head> 
+<body> 
+  <div class='p-4'>
+    <h1>Picture Upload MMF</h1> 
+    <p>Note: Only JPG, JPEG, PNG, and GIF files under 1MB are allowed</p>
+        <form class=" w-full max-w-lg border-2 border-slate-500 rounded-md p-4"  
+    action="/uploadPictureGallery"
+    enctype="multipart/form-data" 
+    method="POST">
+        <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name">
+                    <span>Upload Picture:</span> 
+                </label>
+                <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700  border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                type="file" name="pic-gallery" multiple required />
+            </div>
+            <div class='w-full mt-6 flex justify-center'>
+                <input type="submit"  value="Submit"
+                class='bg-violet-500 shadow-xl hover:shadow-none duration-300 w-1/2 py-2 rounded-md text-white  text-xl cursor-pointer  active:bg-violet-600'>
+            </div>
+        </div>
+    </form>
+</div>
+</body>  
+</html>
